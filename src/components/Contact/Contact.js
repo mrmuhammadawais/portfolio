@@ -16,8 +16,8 @@ export const Contact = () => {
     message: ''
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
+  const [buttonText] = useState('Send');
+  const [status] = useState({});
 
   const onFormUpdate = (category, value) => {
       setFormDetails({
@@ -26,26 +26,7 @@ export const Contact = () => {
       })
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code ===200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
-      console.log('Message Sent');
-    } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-    }
-  };
+
   const form = useRef();
 
   const sendEmail = (e) => {
