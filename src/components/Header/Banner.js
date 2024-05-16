@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState, useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../../assets/img/header-img.svg";
@@ -17,9 +18,10 @@ import TrackVisibility from 'react-on-screen';
     const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
     const period = 2000;
   
+  
     useEffect(() => {
      
-      // console.log(`The Delta and Tick is ${delta} `);
+    
       let ticker = setInterval(() => {
         tick();
       }, [delta]);
@@ -81,4 +83,5 @@ import TrackVisibility from 'react-on-screen';
       </Container>
     </section>
   )
+
 }
