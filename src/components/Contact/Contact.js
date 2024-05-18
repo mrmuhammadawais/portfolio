@@ -19,8 +19,8 @@ export default function Contact() {
        "vUCuYt6JvPJgr-4Mj"
   )
       .then(
-        () => {
-          console.log('SUCCESS!');
+        (result) => {
+         alert("Great, your request has been sent!"); 
         },
         (error) => {
           console.log('FAILED...', error.text);
