@@ -91,16 +91,16 @@ export default function Contact() {
                   <Row>
                  
      <Col size={12} sm={6} className="px-1">
-         <input type="text" name="user_name" placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} /> 
+         <input required type="text" name="user_name" placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} /> 
                      </Col>
                     <Col size={12} sm={6} className="px-1"> 
-                    <input type="text" name="user_name" placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                    <input required type="text" name="user_name" placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                    </Col> 
                     <Col size={12} sm={6} className="px-1">
-                    <input type="email" name="user_email" placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
+                    <input required type="email" name="user_email" placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                    <input type="text" name="user_name" placeholder="Phone Number" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                    <input required type="text" name="user_name" placeholder="Phone Number" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                     </Col>
                     <Col size={12} className="px-1">
                     <textarea  rows={6} className="px-1" name="message"  placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
