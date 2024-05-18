@@ -103,7 +103,7 @@ export default function Contact() {
                     <input required type="text" name="user_name" placeholder="Phone Number" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                     </Col>
                     <Col size={12} className="px-1">
-                    <textarea  rows={6} className="px-1" name="message"  placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                    <textarea required rows={6} className="px-1" name="message"  placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                       <button type="submit"><span>{buttonText}</span></button>
                     </Col> 
      
