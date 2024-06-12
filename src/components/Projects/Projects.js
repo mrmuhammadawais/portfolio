@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import projImg1 from "../../assets/img/project-img1.png";
 import projImg2 from "../../assets/img/project-img2.png";
-import projImg3 from "../../assets/img/project-img3.PNG";
+import projImg3 from "../../assets/img/project-img3.png";
 import projImg4 from "../../assets/img/project-img4.png";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -23,8 +23,8 @@ export const Projects = () => {
       imgUrl: projImg2,
     },
     {
-      title: "Stop Watch",
-      description: "Using redux",
+      title: "Chahudhary Goods Transport Company",
+      description: "React and Bootstrap",
       imgUrl: projImg3,
     },
     {
